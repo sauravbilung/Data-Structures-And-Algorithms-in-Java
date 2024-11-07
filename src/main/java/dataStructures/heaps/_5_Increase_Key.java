@@ -2,17 +2,17 @@ package dataStructures.heaps;
 
 import java.util.Arrays;
 
-public class _2_MinHeap {
-
+public class _5_Increase_Key {
     public static void main(String[] args) {
         int[] arr = new int[]{3, 9, 1, 5, 6, 3, 8, 0, 10};
+        HeapUtils.buildHeap(arr, HeapUtils.HeapType.MAX);
 
-        System.out.println("Original array :");
+        System.out.println("Max heap : ");
         Arrays.stream(arr).forEach(num -> System.out.print(num + " "));
 
-        HeapUtils.buildHeap(arr, HeapUtils.HeapType.MIN);
+        HeapUtils.maxHeapIncreaseKey(arr, 8, 11);
 
-        System.out.println("\nMin Heap array : ");
+        System.out.println("\nUpdated max heap :");
         Arrays.stream(arr).forEach(num -> System.out.print(num + " "));
     }
 }
