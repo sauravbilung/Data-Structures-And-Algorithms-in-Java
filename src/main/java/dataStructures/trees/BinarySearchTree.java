@@ -3,6 +3,9 @@ package dataStructures.trees;
 
 import groovyjarjarantlr4.runtime.tree.Tree;
 
+import java.util.Deque;
+import java.util.LinkedList;
+
 public class BinarySearchTree {
 
     private TreeNode root;
@@ -62,6 +65,26 @@ public class BinarySearchTree {
             postOrderRecursive(node.left);
             postOrderRecursive(node.right);
             System.out.print(node.value + " ");
+        }
+    }
+
+    public void levelOrderTraversal() {
+
+        Deque<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+
+        while (!queue.isEmpty()) {
+
+            TreeNode node = queue.poll();
+            if (node == null) {
+                System.out.print("null ");
+                continue;
+            }
+
+            System.out.print(node.value + " ");
+            queue.add(node.left);
+            queue.add(node.right);
+
         }
     }
 

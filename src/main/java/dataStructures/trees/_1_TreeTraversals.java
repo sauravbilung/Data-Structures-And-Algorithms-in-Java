@@ -22,6 +22,10 @@ public class _1_TreeTraversals {
 
         System.out.print("Post-order traversal: ");
         tree.postOrderTraversal();  // Output: 20 40 30 60 80 70 50
+        System.out.println();
+
+        System.out.print("Level-order traversal: ");
+        tree.levelOrderTraversal(); // Output: 50 30 70 20 40 60 80 null null null null null null null null
     }
 }
 
