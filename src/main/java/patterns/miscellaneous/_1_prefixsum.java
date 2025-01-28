@@ -1,4 +1,4 @@
-package dataStructures.arrays;
+package patterns.miscellaneous;
 
 public class _1_prefixsum {
     public static void main(String[] args) {

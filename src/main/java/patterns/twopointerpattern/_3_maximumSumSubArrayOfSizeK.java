@@ -1,4 +1,4 @@
-package dataStructures.arrays.twopointerpattern;
+package patterns.twopointerpattern;
 
 // Two pointers sliding window approach
 public class _3_maximumSumSubArrayOfSizeK {

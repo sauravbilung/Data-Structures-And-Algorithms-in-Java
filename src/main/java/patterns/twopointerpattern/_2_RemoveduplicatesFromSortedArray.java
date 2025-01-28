@@ -1,4 +1,4 @@
-package dataStructures.arrays.twopointerpattern;
+package patterns.twopointerpattern;
 
 import java.util.Arrays;
 

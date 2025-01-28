@@ -1,4 +1,4 @@
-package dataStructures.arrays.twopointerpattern;
+package patterns.twopointerpattern;
 
 // Two pointers from opposite side
 public class _4_FindPairsWithAGivenSumInSortedArray {

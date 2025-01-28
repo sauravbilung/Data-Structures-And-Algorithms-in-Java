@@ -1,4 +1,4 @@
-package algorithms.backtracking;
+package patterns.backtracking;
 
 import java.util.Arrays;
 import java.util.Scanner;

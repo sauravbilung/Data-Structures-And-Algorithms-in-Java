@@ -1,4 +1,4 @@
-package dataStructures.arrays.twopointerpattern;
+package patterns.twopointerpattern;
 
 // Two pointers meeting in the middle
 public class _1_palindrome {
