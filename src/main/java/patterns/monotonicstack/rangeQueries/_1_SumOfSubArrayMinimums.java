@@ -7,12 +7,11 @@ import java.util.Deque;
 public class _1_SumOfSubArrayMinimums {
 
     public static void main(String[] args) {
-        int MOD = 1_000_000_007;
         int[] nums1 ={3,1,2,4}; // 17
-        int[] nums2 = {3,1,1,2,4}; //
-        int[] nums3 = {71,55,82,55};
-        int[] nums4 = {2,2,2,2};
-        int[] nums5 = {1,2,3,4};
+        int[] nums2 = {3,1,1,2,4}; // 22
+        int[] nums3 = {71,55,82,55}; // 593
+        int[] nums4 = {2,2,2,2}; // 20
+        int[] nums5 = {1,2,3,4}; // 20
 
         System.out.printf("%s, output : %d \n", Arrays.toString(nums1), sumSubarrayMins(nums1));
         System.out.printf("%s, output : %d \n", Arrays.toString(nums2), sumSubarrayMins(nums2));
