@@ -14,7 +14,7 @@ public class _2_SumOfSubarrayRanges {
         int[] nums5 = {1, 2, 3, 4};
 
         /*
-         * Result=∑(max of all sub-arrays)−∑(min of all sub-arrays)
+         * Result = ∑(max of all sub-arrays) − ∑(min of all sub-arrays)
          */
         System.out.printf("%s, Output : %d\n", Arrays.toString(nums1), sumSubarrayExtremes(nums1, true) - sumSubarrayExtremes(nums1, false));
         System.out.printf("%s, Output : %d\n", Arrays.toString(nums2), sumSubarrayExtremes(nums2, true) - sumSubarrayExtremes(nums2, false));
@@ -32,7 +32,7 @@ public class _2_SumOfSubarrayRanges {
 
         for (int i = 0; i < arr.length; i++) {
             while (!stack.isEmpty()) {
-                boolean shouldPop = isMax ? arr[stack.peek()] <= arr[i] : arr[stack.peek()] >= arr[i];
+                boolean shouldPop = isMax ? arr[stack.peek()] < arr[i] : arr[stack.peek()] > arr[i];
                 if (!shouldPop) break;
                 stack.pop();
             }
@@ -44,7 +44,7 @@ public class _2_SumOfSubarrayRanges {
 
         for (int i = arr.length - 1; i >= 0; i--) {
             while (!stack.isEmpty()) {
-                boolean shouldPop = isMax ? arr[stack.peek()] < arr[i] : arr[stack.peek()] > arr[i];
+                boolean shouldPop = isMax ? arr[stack.peek()] <= arr[i] : arr[stack.peek()] >= arr[i];
                 if (!shouldPop) break;
                 stack.pop();
             }
