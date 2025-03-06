@@ -29,7 +29,7 @@ class BFSSolution {
     }
 
     // BFS traversal from a single node.
-    public List<Integer> bfsTraversal(int startNode, boolean[] visited) {
+    private List<Integer> performBFS(int startNode, boolean[] visited) {
         List<Integer> result = new ArrayList<>();
         Queue<Integer> exploreQueue = new LinkedList<>();
 
@@ -59,7 +59,7 @@ class BFSSolution {
 
     public List<Integer> bfsTraversal(int startNode) {
         boolean[] visited = new boolean[nodes];
-        return bfsTraversal(startNode, visited);
+        return performBFS(startNode, visited);
     }
 
     // Handles disconnected graphs.
@@ -68,7 +68,7 @@ class BFSSolution {
         List<Integer> fullResult = new ArrayList<>();
 
         for (int i = 0; i < nodes; i++) {
-            fullResult.addAll(bfsTraversal(i, visited));
+            fullResult.addAll(performBFS(i, visited));
         }
 
         return fullResult;

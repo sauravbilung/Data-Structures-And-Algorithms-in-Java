@@ -23,32 +23,6 @@ public class _2_BFSUsingAdjacencyList {
     }
 }
 
-class Graph {
-    private final int nodes;
-    private final List<List<Integer>> adjacencyList;
-
-    public Graph(int nodes) {
-        this.nodes = nodes;
-        adjacencyList = new ArrayList<>();
-        for (int i = 0; i < nodes; i++) {
-            adjacencyList.add(new ArrayList<>());
-        }
-    }
-
-    public void addEdge(int u, int v) {
-        adjacencyList.get(u).add(v);
-        // adjacencyList.get(v).add(u); // Uncomment for an undirected graph
-    }
-
-    public List<List<Integer>> getAdjacencyList() {
-        return adjacencyList;
-    }
-
-    public int getNodes() {
-        return nodes;
-    }
-}
-
 class BFSSolution2 {
     private final List<List<Integer>> graph;
     private final int nodes;
@@ -59,7 +33,7 @@ class BFSSolution2 {
     }
 
     // BFS traversal from a single node.
-    public List<Integer> bfsTraversal(int startNode, boolean[] visited) {
+    private List<Integer> performBFS(int startNode, boolean[] visited) {
         List<Integer> result = new ArrayList<>();
         Queue<Integer> exploreQueue = new LinkedList<>();
 
@@ -89,7 +63,7 @@ class BFSSolution2 {
 
     public List<Integer> bfsTraversal(int startNode) {
         boolean[] visited = new boolean[nodes];
-        return bfsTraversal(startNode, visited);
+        return performBFS(startNode, visited);
     }
 
     // Handles disconnected graphs.
@@ -98,7 +72,7 @@ class BFSSolution2 {
         List<Integer> fullResult = new ArrayList<>();
 
         for (int i = 0; i < nodes; i++) {
-            fullResult.addAll(bfsTraversal(i, visited));
+            fullResult.addAll(performBFS(i, visited));
         }
 
         return fullResult;
