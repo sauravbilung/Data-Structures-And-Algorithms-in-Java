@@ -25,6 +25,13 @@ public class _9_CountAllNbitIntegersWithNoConsecutiveZeros {
             numberOfStrings[1] = 2;
             numberOfStrings[2] = 3;
             for (int i = 3; i < n + 1; i++) {
+
+                // numberOfStrings[i - 1] => we can append '1' to all valid strings of length (i - 1)
+                // since adding '1' never causes consecutive zeros, this is always safe
+
+                // numberOfStrings[i - 2] => we can append '10' to all valid strings of length (i - 2)
+                // because '0' must be preceded by a '1' to avoid "00"
+
                 numberOfStrings[i] = (numberOfStrings[i - 1] + numberOfStrings[i - 2]) % mod;
             }
         }
