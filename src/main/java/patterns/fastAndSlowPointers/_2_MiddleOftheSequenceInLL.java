@@ -7,7 +7,7 @@ public class _2_MiddleOftheSequenceInLL {
 
     public static void main(String[] args) {
         int[] values = {1, 2, 3, 4, 5, 6, 7};
-        ListNode head = ListNodeUtils.createLinkedListWithCycle(values, 10);
+        ListNode head = ListNodeUtils.createLinkedListWithCycle(values, -1);
         ListNodeUtils.printLinkedList(head, 10);
         System.out.printf("Middle node : %d", findMiddle(head).val);
     }

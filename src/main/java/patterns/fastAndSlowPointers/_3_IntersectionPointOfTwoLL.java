@@ -11,11 +11,12 @@ public class _3_IntersectionPointOfTwoLL {
         int[] values1 = {10};
         int[] values2 = {3, 6, 9};
         int[] commonValues = {11, 22};
-        ListNode commonListHead = ListNodeUtils.createLinkedListWithCycle(commonValues, 10);
-        ListNode head1 = ListNodeUtils.createLinkedListWithCycle(values1, 10);
-        ListNode head2 = ListNodeUtils.createLinkedListWithCycle(values2, 10);
-        head1.next = commonListHead;
-        head2.next = commonListHead;
+        ListNode commonListHead = ListNodeUtils.createLinkedListWithCycle(commonValues, -1);
+        ListNode head1 = ListNodeUtils.createLinkedListWithCycle(values1, -1);
+        ListNode head2 = ListNodeUtils.createLinkedListWithCycle(values2, -1);
+        attachTail(head1, commonListHead);
+        attachTail(head2, commonListHead);
+
         Optional<ListNode> intersectionNode = Optional.ofNullable(findIntersection(head1, head2));
 
         if (intersectionNode.isPresent()) {
@@ -36,5 +37,16 @@ public class _3_IntersectionPointOfTwoLL {
             p2 = (p2 == null) ? head1 : p2.next;
         }
         return p1;
+    }
+
+    private static void attachTail(ListNode head, ListNode tail) {
+        if (head == null) return;
+
+        ListNode current = head;
+        while (current.next != null) {
+            current = current.next;
+        }
+
+        current.next = tail;
     }
 }
