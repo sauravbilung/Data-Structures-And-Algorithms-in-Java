@@ -1,4 +1,4 @@
-package patterns.overlappingIntervals.minMaxCoverage;
+package patterns.intervals.minMaxCoverage;
 
 import java.util.Arrays;
 

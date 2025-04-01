@@ -1,4 +1,4 @@
-package patterns.overlappingIntervals.intervalInsertion;
+package patterns.intervals.intervalInsertion;
 
 import java.util.ArrayList;
 import java.util.Arrays;

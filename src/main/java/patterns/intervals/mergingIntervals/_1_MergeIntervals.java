@@ -1,4 +1,4 @@
-package patterns.overlappingIntervals.mergingIntervals;
+package patterns.intervals.mergingIntervals;
 
 import java.util.ArrayList;
 import java.util.Arrays;
