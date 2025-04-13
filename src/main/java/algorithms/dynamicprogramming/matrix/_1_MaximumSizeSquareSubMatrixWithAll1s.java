@@ -1,10 +1,23 @@
-package algorithms.dynamicprogramming;
+package algorithms.dynamicprogramming.matrix;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class _4_MaximumSizeSquareSubMatrixWithAll1s {
+public class _1_MaximumSizeSquareSubMatrixWithAll1s {
     public static void main(String[] args) {
+
+        // input : int[][] matrix = {
+        //    {0, 1, 1, 0, 1},
+        //    {1, 1, 1, 1, 0},
+        //    {1, 1, 1, 1, 0},
+        //    {1, 1, 1, 1, 1},
+        //    {0, 0, 1, 1, 1}
+        //};
+
+        // output : 3
+        // 1 1 1
+        // 1 1 1
+        // 1 1 1
         System.out.println("Enter space separated dimensions of the matrix :");
         Scanner scanner = new Scanner(System.in);
         String[] dimensions = scanner.nextLine().split(" ");
