@@ -1,10 +1,12 @@
-package algorithms.dynamicprogramming;
+package algorithms.dynamicprogramming.longestSubsequence;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class _2_MaximumSumIncreasingSubsequence {
+public class _1_MaximumSumIncreasingSubsequence {
     public static void main(String[] args) {
+        // input : int[] arr = {1, 101, 2, 3, 100, 4, 5};
+        // output : 106 . 1 + 2 + 3 + 100 = 106;
         System.out.println("Enter space separated array contents : ");
         Scanner scanner = new Scanner(System.in);
         int[] nums = Arrays.stream(scanner.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();

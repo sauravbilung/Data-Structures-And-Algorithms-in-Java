@@ -1,10 +1,12 @@
-package algorithms.dynamicprogramming;
+package algorithms.dynamicprogramming.longestSubsequence;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class _6_LongestIncreasingSubsequence {
+public class _3_LongestIncreasingSubsequence {
     public static void main(String[] args) {
+        // input : int[] arr = {10, 9, 2, 5, 3, 7, 101, 18};
+        // output : 4. [2, 3, 7, 101] and [2, 5, 7, 18]
         System.out.println("Enter space separated array contents :");
         Scanner scanner = new Scanner(System.in);
         int[] nums = Arrays.stream(scanner.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();

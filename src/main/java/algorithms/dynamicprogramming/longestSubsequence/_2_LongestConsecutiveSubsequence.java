@@ -1,11 +1,13 @@
-package algorithms.dynamicprogramming;
+package algorithms.dynamicprogramming.longestSubsequence;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class _3_LongestConsecutiveSubsequence {
+public class _2_LongestConsecutiveSubsequence {
     public static void main(String[] args) {
+        // input : 100, 4, 200, 1, 3, 2
+        // output : 4. 1,2,3,4
         System.out.println("Enter space separated array contents :");
         Scanner scanner = new Scanner(System.in);
         int[] nums = Arrays.stream(scanner.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
