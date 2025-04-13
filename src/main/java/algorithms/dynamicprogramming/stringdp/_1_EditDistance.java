@@ -1,8 +1,8 @@
-package algorithms.dynamicprogramming;
+package algorithms.dynamicprogramming.stringdp;
 
 import java.util.Scanner;
 
-public class _7_EditDistance {
+public class _1_EditDistance {
 
     public static void main(String[] args) {
         System.out.println("Enter first word : ");

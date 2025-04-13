@@ -1,4 +1,4 @@
-package algorithms.dynamicprogramming;
+package algorithms.dynamicprogramming.kadanesalgorithms;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -12,6 +12,8 @@ import java.util.Scanner;
  */
 public class _1_MaximumSumSubarray {
     public static void main(String[] args) {
+        // input : [-2,1,-3,4,-1,2,1,-5,4]
+        // output : 6. The subarray [4,-1,2,1] has the largest sum 6.
         System.out.println("Enter the array contents :");
         Scanner scanner = new Scanner(System.in);
         int[] nums = Arrays.stream(scanner.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();

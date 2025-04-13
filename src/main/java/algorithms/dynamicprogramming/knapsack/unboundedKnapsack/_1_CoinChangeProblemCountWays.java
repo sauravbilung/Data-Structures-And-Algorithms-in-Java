@@ -1,9 +1,9 @@
-package algorithms.dynamicprogramming;
+package algorithms.dynamicprogramming.knapsack.unboundedKnapsack;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class _11_CoinChangeProblemCountWays {
+public class _1_CoinChangeProblemCountWays {
     public static void main(String[] args) {
         System.out.println("Enter space separated numbers : ");
         Scanner scanner = new Scanner(System.in);
