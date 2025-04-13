@@ -1,10 +1,10 @@
-package algorithms.dynamicprogramming;
+package algorithms.dynamicprogramming.digitDp;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class _8_PrintAllNbitIntegersWithNoConsecutiveZeros {
+public class _1_PrintAllNbitIntegersWithNoConsecutiveZeros {
     public static void main(String[] args) {
         System.out.println("Enter a number : ");
         Scanner scanner = new Scanner(System.in);

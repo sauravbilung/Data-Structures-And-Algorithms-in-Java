@@ -1,8 +1,8 @@
-package algorithms.dynamicprogramming;
+package algorithms.dynamicprogramming.numberTheory;
 
 import java.util.Scanner;
 
-public class _5_NthUglyNumber {
+public class _1_NthUglyNumber {
     public static void main(String[] args) {
         System.out.print("Enter number n : ");
         Scanner scanner = new Scanner(System.in);

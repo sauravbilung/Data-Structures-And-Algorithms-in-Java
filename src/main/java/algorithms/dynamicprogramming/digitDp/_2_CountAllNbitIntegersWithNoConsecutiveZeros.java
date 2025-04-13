@@ -1,11 +1,11 @@
-package algorithms.dynamicprogramming;
+package algorithms.dynamicprogramming.digitDp;
 
 import java.util.Scanner;
 
 /**
  * Problem link : https://www.geeksforgeeks.org/problems/consecutive-1s-not-allowed1912/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=practice_card
  * */
-public class _9_CountAllNbitIntegersWithNoConsecutiveZeros {
+public class _2_CountAllNbitIntegersWithNoConsecutiveZeros {
     public static void main(String[] args) {
         System.out.println("Enter string length : ");
         Scanner scanner = new Scanner(System.in);
