@@ -1,9 +1,9 @@
-package algorithms.dynamicprogramming;
+package algorithms.dynamicprogramming.knapsack.unboundedKnapsack;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class _12_CoinChangeProblemMinCoins {
+public class _2_CoinChangeProblemMinCoins {
 
     static int[][] dp;
 
