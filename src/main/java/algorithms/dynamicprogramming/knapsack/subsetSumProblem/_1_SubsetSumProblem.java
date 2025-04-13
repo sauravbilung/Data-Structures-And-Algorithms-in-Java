@@ -1,9 +1,9 @@
-package algorithms.dynamicprogramming;
+package algorithms.dynamicprogramming.knapsack.subsetSumProblem;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class _10_SubsetSumProblem {
+public class _1_SubsetSumProblem {
     public static void main(String[] args) {
         System.out.println("Enter space separated array contents : ");
         Scanner scanner = new Scanner(System.in);

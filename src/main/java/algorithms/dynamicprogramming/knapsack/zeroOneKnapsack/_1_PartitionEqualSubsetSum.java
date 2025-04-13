@@ -8,8 +8,29 @@ public class _1_PartitionEqualSubsetSum {
         int[] nums1 = {1, 5, 11, 5};
         int[] nums2 = {1, 2, 3, 5};
 
-        System.out.println("Can partition nums1? " + canPartition(nums1)); // true
-        System.out.println("Can partition nums2? " + canPartition(nums2)); // false
+        System.out.println("Can partition nums1? " + canPartitionSpaceOptimised(nums1)); // true
+        System.out.println("Can partition nums2? " + canPartitionSpaceOptimised(nums2)); // false
+    }
+
+
+    public static boolean canPartitionSpaceOptimised(int[] nums) {
+
+        int sum = Arrays.stream(nums).sum();
+
+        if (sum % 2 != 0) return false;
+
+        int half = sum / 2;
+
+        boolean[] dp = new boolean[half + 1];
+        dp[0] = true;
+
+        for (int num : nums) {
+            for (int j = half; j >= num; j--) {
+                dp[j] = dp[j] || dp[j - num];
+            }
+        }
+
+        return dp[half];
     }
 
     public static boolean canPartition(int[] nums) {
