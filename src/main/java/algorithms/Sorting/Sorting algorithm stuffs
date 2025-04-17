@@ -1,0 +1,19 @@
+Stable sorting algorithms :
+A stable sorting algorithm preserves the relative order of equal elements from the original input in the sorted output.
+
+🔁 Common Stable Sorting Algorithms:
+Bubble Sort
+Insertion Sort
+Merge Sort
+TimSort (used in Java, Python)
+counting sort
+
+⚠️ Unstable Sorting Algorithms:
+Selection Sort
+Quick Sort (standard version)
+Heap Sort
+
+Counting sort :
+
+Counting Sort is a non-comparison-based sorting algorithm. It works by counting the number of occurrences of each element and using that count to place elements in the correct position.
+✅ Best when: The range of input data (i.e., max-min) is not too large.
