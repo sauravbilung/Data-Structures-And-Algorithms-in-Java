@@ -3,7 +3,7 @@ package dataStructures.trees;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-public class _8_FlattenTreeToLinkedList {
+public class _11_FlattenTreeToLinkedList {
 
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);
