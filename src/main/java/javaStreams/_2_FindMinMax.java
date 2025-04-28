@@ -69,5 +69,3 @@ public class _2_FindMinMax {
     }
 }
 
-record Employee(String name, int salary) {
-}
