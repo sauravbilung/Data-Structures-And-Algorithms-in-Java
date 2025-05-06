@@ -7,6 +7,9 @@ public class _5_FlatMap {
 
     public static void main(String[] args) {
         // flatMap is used to flatten nested structures (like List<List<T>>) into a single stream of elements.
+        // It takes a Function<T, Stream<R>>, meaning for each element T, it returns a Stream<R>. flatMap in Java takes a function that returns a Stream.
+        // flatMap then merges all these individual streams into a single continuous stream.
+
         //flattenListOfList();
         //flattenListOfArray();
         //wordsFromSentences();

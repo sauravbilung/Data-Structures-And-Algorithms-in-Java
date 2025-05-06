@@ -86,7 +86,8 @@ public class _3_Grouping {
                 new Employee3("Bob", "IT", "San Francisco"),
                 new Employee3("Charlie", "HR", "New York"),
                 new Employee3("David", "Finance", "Chicago"),
-                new Employee3("Eve", "IT", "San Francisco")
+                new Employee3("Eve", "IT", "San Francisco"),
+                new Employee3("Tom", "IT", "New York")
         );
 
         Map<String, Map<String, List<String>>> grouped = employees.stream().collect(
