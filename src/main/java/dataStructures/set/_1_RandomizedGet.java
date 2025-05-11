@@ -2,7 +2,7 @@ package dataStructures.set;
 
 import java.util.*;
 
-public class RandomizedGet {
+public class _1_RandomizedGet {
 
     public static void main(String[] args) {
         RandomizedSet set = new RandomizedSet();
