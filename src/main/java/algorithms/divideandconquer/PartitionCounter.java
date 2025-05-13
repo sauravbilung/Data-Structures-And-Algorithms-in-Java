@@ -16,7 +16,8 @@ import java.util.Arrays;
  * 1. [8, 0, 0, 0] | [2, 2, 2, 2]
  * 2. [2, 2] | [2, 2]
  * 3. [2] | [2]
- * Total splits = 3
+ * 4. [2] | [2]
+ * Total splits = 4
  */
 public class PartitionCounter {
 
@@ -31,6 +32,7 @@ public class PartitionCounter {
 
     private static int getPartitionCount(int[] arr, int start, int end) {
         if (start >= end) return 0;
+        if ((end - start + 1) % 2 != 0) return 0; // Can't split odd-length subarray
 
         int mid = (start + end) / 2;
 
