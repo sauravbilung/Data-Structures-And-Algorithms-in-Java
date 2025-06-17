@@ -1,8 +1,19 @@
-package algorithms.dynamicprogramming.knapsack.partitionEqualSubset;
+package algorithms.dynamicprogramming.knapsack.zeroOneKnapsack;
 
 import java.util.Arrays;
 
-public class _1_LastStoneWeightII {
+/**
+ * This class provides a solution to the "Last Stone Weight II" problem.
+ * The goal is to split the array of stone weights into two groups such that
+ * the absolute difference of their total weights is minimized.
+ *
+ * This is a variation of the classic **Partition Equal Subset Sum** problem,
+ * and uses dynamic programming to find the subset of stones whose sum is
+ * as close as possible to half of the total weight.
+ *
+ * Leetcode Equivalent: https://leetcode.com/problems/last-stone-weight-ii/
+ */
+public class _3_LastStoneWeightII {
 
     public static void main(String[] args) {
         int[] stones1 = {3, 2, 1};   // Output should be 0 (split into [3] and [2,1])

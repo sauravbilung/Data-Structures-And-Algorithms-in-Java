@@ -1,9 +1,12 @@
-package algorithms.dynamicprogramming.knapsack.subsetSumProblem;
+package algorithms.dynamicprogramming.knapsack.zeroOneKnapsack;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class _1_SubsetSumProblem {
+/**
+ * Given an array arr[] and a target sum, determine whether there exists a subset of the array that adds up exactly to the given sum.
+ * */
+public class _2_SubsetSumProblem {
     public static void main(String[] args) {
         System.out.println("Enter space separated array contents : ");
         Scanner scanner = new Scanner(System.in);

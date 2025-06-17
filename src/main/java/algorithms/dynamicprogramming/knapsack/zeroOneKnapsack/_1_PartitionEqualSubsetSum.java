@@ -2,14 +2,18 @@ package algorithms.dynamicprogramming.knapsack.zeroOneKnapsack;
 
 import java.util.Arrays;
 
+/**
+ * Given a non-empty array nums containing positive integers, determine if it can be partitioned into two subsets
+ * such that the sum of elements in both subsets is equal.
+ * */
 public class _1_PartitionEqualSubsetSum {
 
     public static void main(String[] args) {
         int[] nums1 = {1, 5, 11, 5};
         int[] nums2 = {1, 2, 3, 5};
 
-        System.out.println("Can partition nums1? " + canPartitionSpaceOptimised(nums1)); // true
-        System.out.println("Can partition nums2? " + canPartitionSpaceOptimised(nums2)); // false
+        System.out.println("Can partition nums1 ? " + canPartitionSpaceOptimised(nums1)); // true
+        System.out.println("Can partition nums2 ? " + canPartitionSpaceOptimised(nums2)); // false
     }
 
 
@@ -24,6 +28,8 @@ public class _1_PartitionEqualSubsetSum {
         boolean[] dp = new boolean[half + 1];
         dp[0] = true;
 
+        // We are updating the dp array in reverse to ensure we are still using the results from the previous "row".
+        // (previous item's state)
         for (int num : nums) {
             for (int j = half; j >= num; j--) {
                 dp[j] = dp[j] || dp[j - num];
