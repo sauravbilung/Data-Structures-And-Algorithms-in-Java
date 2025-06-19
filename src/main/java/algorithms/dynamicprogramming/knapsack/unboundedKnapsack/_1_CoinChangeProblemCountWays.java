@@ -3,6 +3,10 @@ package algorithms.dynamicprogramming.knapsack.unboundedKnapsack;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * Solves the Coin Change Problem (Count Ways variant) using dynamic programming.
+ * Given unlimited supply of coins, it calculates the number of ways to make a target sum.
+ */
 public class _1_CoinChangeProblemCountWays {
     public static void main(String[] args) {
         System.out.println("Enter space separated numbers : ");
