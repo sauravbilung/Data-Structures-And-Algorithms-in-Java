@@ -1,3 +1,5 @@
 
 Subsequence : Maintains order.
 Sub-array : which is contiguous
+
+Rolling window : Instead of keeping a full dp[] array, we only keep the last few relevant states that are needed to compute the current state.
