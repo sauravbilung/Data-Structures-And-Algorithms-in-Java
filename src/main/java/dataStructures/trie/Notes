@@ -1,0 +1,18 @@
+🔍 What is a Trie?
+
+A Trie is a tree-like data structure used for storing a dynamic set of strings, where common prefixes are stored only once. It's mainly used for efficient prefix lookups.
+
+Key Operations:
+
+insert(String word)
+search(String word) → exact match
+startsWith(String prefix) → prefix match
+
+✅ Use Cases of Trie
+
+| Use Case                       | Description                       |
+| ------------------------------ | --------------------------------- |
+| Auto-complete                  | Suggest words based on prefix     |
+| Dictionary word search         | Fast lookup of stored words       |
+| Spell-checker                  | Validate or suggest correct words |
+| IP routing (with bitwise trie) | Prefix-based routing decisions    |
