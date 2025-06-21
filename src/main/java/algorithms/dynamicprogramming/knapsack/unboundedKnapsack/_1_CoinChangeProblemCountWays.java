@@ -14,10 +14,23 @@ public class _1_CoinChangeProblemCountWays {
         int[] coins = Arrays.stream(scanner.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         System.out.println("Enter sum : ");
         int sum = scanner.nextInt();
-        System.out.printf("Output : %d", count(coins, sum));
+        System.out.printf("Output : %d", countWaysSpaceOptimised(coins, sum));
     }
 
-    private static long count(int[] coins, int sum) {
+    private static long countWaysSpaceOptimised(int[] coins, int sum) {
+        long[] noOfWays = new long[sum + 1];
+        noOfWays[0] = 1;
+
+        for (int coin : coins) {
+            for (int i = coin; i <= sum; i++) {
+                noOfWays[i] = noOfWays[i] + noOfWays[i - coin];
+            }
+        }
+
+        return noOfWays[sum];
+    }
+
+    private static long countWaysTabulation(int[] coins, int sum) {
         long[][] noOfWays = new long[coins.length + 1][sum + 1];
         for (int i = 0; i < coins.length + 1; i++) {
             for (int j = 0; j < sum + 1; j++) {
@@ -35,4 +48,5 @@ public class _1_CoinChangeProblemCountWays {
         }
         return noOfWays[coins.length][sum];
     }
+
 }
