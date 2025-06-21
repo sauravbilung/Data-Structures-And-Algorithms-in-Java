@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * Given a non-empty array nums containing positive integers, determine if it can be partitioned into two subsets
  * such that the sum of elements in both subsets is equal.
- * */
+ */
 public class _1_PartitionEqualSubsetSum {
 
     public static void main(String[] args) {
@@ -28,8 +28,9 @@ public class _1_PartitionEqualSubsetSum {
         boolean[] dp = new boolean[half + 1];
         dp[0] = true;
 
-        // We are updating the dp array in reverse to ensure we are still using the results from the previous "row".
-        // (previous item's state)
+        // We are updating the dp array in reverse to ensure we are still using the results from the previous "row".(previous item's state)
+        // If we do forward traversal, we might up reusing the same number multiple times, which simulates unbounded
+        // knapsack rather than 0/1 knapsack.
         for (int num : nums) {
             for (int j = half; j >= num; j--) {
                 dp[j] = dp[j] || dp[j - num];

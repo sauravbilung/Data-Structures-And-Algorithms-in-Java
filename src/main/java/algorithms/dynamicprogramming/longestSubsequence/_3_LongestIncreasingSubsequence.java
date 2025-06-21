@@ -3,6 +3,12 @@ package algorithms.dynamicprogramming.longestSubsequence;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * Finds the length of the Longest Increasing Subsequence (LIS) in an integer array
+ * using dynamic programming with O(n²) time complexity.
+ * An increasing subsequence means each next element is strictly greater than the previous one.
+ */
+
 public class _3_LongestIncreasingSubsequence {
     public static void main(String[] args) {
         // input : int[] arr = {10, 9, 2, 5, 3, 7, 101, 18};

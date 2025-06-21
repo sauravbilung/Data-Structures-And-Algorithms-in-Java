@@ -3,6 +3,12 @@ package algorithms.dynamicprogramming.longestSubsequence;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * Solves the Maximum Sum Increasing Subsequence (MSIS) problem using dynamic programming.
+ * Given an integer array, it finds the maximum sum of any strictly increasing subsequence.
+ * Strictly increasing: Each element in the sequence is greater than the previous.
+ */
+
 public class _1_MaximumSumIncreasingSubsequence {
     public static void main(String[] args) {
         // input : int[] arr = {1, 101, 2, 3, 100, 4, 5};

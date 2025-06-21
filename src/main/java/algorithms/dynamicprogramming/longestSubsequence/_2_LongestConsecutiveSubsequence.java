@@ -4,6 +4,12 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Scanner;
 
+/**
+ * Solves the Longest Consecutive Subsequence problem.
+ * Given an unsorted array of integers, it finds the length of the longest sequence
+ * of consecutive elements (regardless of order) using a HashMap for O(n) time complexity.
+ */
+
 public class _2_LongestConsecutiveSubsequence {
     public static void main(String[] args) {
         // input : 100, 4, 200, 1, 3, 2

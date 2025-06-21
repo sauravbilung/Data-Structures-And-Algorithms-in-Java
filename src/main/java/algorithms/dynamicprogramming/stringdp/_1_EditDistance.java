@@ -2,6 +2,14 @@ package algorithms.dynamicprogramming.stringdp;
 
 import java.util.Scanner;
 
+/**
+ * Computes the Edit Distance (Levenshtein Distance) between two strings using dynamic programming.
+ * The edit distance is the minimum number of insertions, deletions, and substitutions required
+ * to convert one string into the other.
+ *
+ * Note: The code can be optimized for space complexity.
+ */
+
 public class _1_EditDistance {
 
     public static void main(String[] args) {

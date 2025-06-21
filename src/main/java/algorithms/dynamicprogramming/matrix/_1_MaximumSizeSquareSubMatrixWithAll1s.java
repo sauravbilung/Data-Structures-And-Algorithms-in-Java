@@ -3,6 +3,11 @@ package algorithms.dynamicprogramming.matrix;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * Finds the size of the largest square sub-matrix consisting only of 1s in a binary matrix
+ * using dynamic programming. Returns the side length of the largest such square.
+ */
+
 public class _1_MaximumSizeSquareSubMatrixWithAll1s {
     public static void main(String[] args) {
 
